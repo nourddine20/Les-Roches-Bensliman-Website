@@ -13,11 +13,12 @@ class AjouterLotIdReservationsTable extends Migration
      */
     public function up()
     {
-        Schema::table('reservations', function (Blueprint $table) {
-            //
+    Schema::table('reservations', function (Blueprint $table) {
+        if (!Schema::hasColumn('reservations', 'lot_id')) {
             $table->integer('lot_id')->nullable();
-        });
-    }
+        }
+    });
+}
 
     /**
      * Reverse the migrations.
