@@ -7,7 +7,8 @@ function isEmail($email) {
 
 if($_POST) {
 
-    $mailchimp_api_key = 'ed0a0f82434326c6c139446ae25a0b62-us9'; // enter your MailChimp API Key
+    // enter your MailChimp API Key
+    $mailchimp_api_key = env('MAILCHIMP_API_KEY');
     // ****
     $mailchimp_list_id = 'd36bcdc926'; // enter your MailChimp List ID
     // ****

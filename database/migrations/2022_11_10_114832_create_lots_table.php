@@ -29,8 +29,8 @@ class CreateLotsTable extends Migration
             $table->integer('avance')->nullable();
             $table->integer('reliquat')->nullable();
             $table->integer('statu_id')->nullable();
-            $table->inetger('lat')->nullable();
-            $table->inetegr('len')->nullable();
+            $table->integer('lat')->nullable();
+            $table->integer('len')->nullable();
             $table->timestamps();
         });
     }
